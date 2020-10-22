@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=300, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.svg" alt="service monitor logo" class="logo__img">
+            <h1 class="logo__text">Server Monitor</h1>
+        </div>
+        <ul class="navigation__menu" role="navigation">
+            <li class="navigation__item">
+                <a href="/logout" class="navigation_link">log out</a>
+            </li>
+        </ul>
+    </header>
+    <main class="monitor-page">      
+        <div class="servers-menu">
+            <h2 class="servers-menu__title title--gradient">Hosts</h2>
+            <ul class="servers-menu__list">
+                <li class="servers-menu__item">
+                    <button class="servers-menu__button servers-menu__button--active" type="button">
+                        <span class="servers-menu__button-text">Test Server</span>
+                        <span class="servers-menu__icon"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <section class="section">
+            <article class="server-data">
+                <h2 class="server-data__title">Server information</h2>
+                <ul class="server-data__list">
+                    <li class="server-data__item">
+                        <h3 class="server-data__name">Host name: <span class="server-data__info" id="s01_name">Name</span></h3>
+                    </li>
+                    <li class="server-data__item">
+                        <div  class="server-data__cpu">CPU: <span class="server-data__info" id="s01_cpu">cpu</span></div>
+                    </li>
+                    <li class="server-data__item">
+                        <div class="server-data__memory">Memory: <span class="server-data__info" id="s01_memory">mem</span></div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
